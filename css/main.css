@@ -85,6 +85,14 @@ main {
   padding: 1rem;
 }
 
+label {
+  display: block;
+}
+
+form {
+  background-color: #fff;
+}
+
 aside {
   padding: 1em;
   background-color: #698999;
@@ -169,6 +177,11 @@ caption {
   width: 7em;
 }
 
+thanks {
+  font-size: 1.125rem;
+  background-color: #fff;
+}
+
 footer {
   padding: 0.5rem;
   background-color: #4c77a8;
@@ -186,6 +199,14 @@ footer {
  */
 
  @media only screen and (min-width: 60em) {
+
+   .space-right {
+     padding-right: .5rem;
+   }
+
+   .space-left {
+     padding-left: .5rem;
+   }
 
    .table-wrapper {
      overflow: visible;
