@@ -102,12 +102,6 @@ aside a {
 
 table {
   border-collapse: collapse;
-  min-width: 50em;
-}
-
-table p {
-  margin: 0;
-  padding: 0;
 }
 
 th, td {
@@ -131,12 +125,11 @@ thead th,
 tfoot th {
   background-color: #5a84be;
   border-right: 1px solid #3d5059;
-  font-size: 2.125em;
+  font-size: 3.125em;
 }
 
 thead th {
   border-bottom: 1px solid #3d5059;
-  font-size: 3.125em;
 }
 
 tbody th {
@@ -157,6 +150,15 @@ caption {
   font-size: 1.125rem;
 }
 
+table p {
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  width: 7em;
+}
+
 .free {
   width: 7em;
 }
@@ -167,6 +169,10 @@ caption {
 
 .advanced {
   width: 7em;
+}
+
+table {
+  min-width: 50em;
 }
 
 footer {
