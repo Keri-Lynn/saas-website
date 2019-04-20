@@ -11,7 +11,6 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-
   <ul class="skip-links">
     <li><a href="#nav">Skip to navigation</a></li>
     <li><a href="#main">Skip to the main content</a></li>
@@ -22,8 +21,8 @@
         <div class="unit unit-s-1 unit-m-1 unit-l-1-3">
           <h1 class="push-0"><img class="resize-half img-flex logo" src="img/logo-thick.png" alt="SkyShare Logo"></h1>
         </div>
-        <nav role="navigation" id="nav">
-          <div class="unit unit-s-1 unit-m-1 unit-l-2-3">
+        <nav class="unit xs-1 m-1 l-2-3" role="navigation" id="nav">
+          <div>
             <ul class="list-group giga push nav">
               <li class="list-group-item list-group-item">
                 <a href="tour.html">Tour</a>
@@ -40,7 +39,6 @@
       </div>
     </header>
   </div>
-
   <main role="main" id="main">
     <section class="overview">
       <div class="grid">
@@ -52,48 +50,52 @@
         <img class="embed-item img-flex" src="images/logo-thick.png" alt="">
       </div>
     </section>
-
-    <section class="features pad-top">
-      <h2 class="features" id="features">Features</h2>
-      <div class="grid">
-        <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
-          <p>Find the best solutions!<br>Contact our experts to help you find the right<br>SOLUTION</p>
-          <p>Whether you just want backup storage, group project sharing, or mass business file management from anywhere we can help you!</p>
-        </div>
-        <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
-          <ul>
-            <li>Ensure you never loose anything</li>
-            <li>Keep connected with collogues</li>
-            <li>Administration tools to manage projects</li>
-            <li>Secure your files with peace of mind</li>
-            <li>Plans to suit you</li>
-            <li>Recovery Options</li>
-            <li>Device Management</li>
-            <li>Remote Wipe</li>
-            <li>Team Management </li>
-            <li>Link Permission</li>
-            <li>Account Transfer</li>
-            <li>Third Party Apps</li>
-          </ul>
-          <a class="btn btn-learn push" href="pricing.html">Learn More</a>
-          <br>
-          <a class="btn btn-sign-up push" href="sign-up.html">Sign-Up</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="Introduction To File Sharing Video pad-t pad-b">
-      <div class="grid">
-        <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
-          <div class="embed embed--16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uFQhawnWOrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <table>
+      <caption>
+        <h2>Find the best solutions!<br>Contact our experts to help you find the right<br>SOLUTION</h2>
+      </caption>
+      <col class="col-info1">
+      <col class="col-info2">
+      <thead>
+        <tr>
+          <th class="info" scope="col" colspan="2">Whether you just want backup storage, group project sharing, or mass business file management from anywhere we can help you!</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" colspan="2"> ------------------------ </th>
+        </tr>
+        <tr>
+          <th scope="row">
+            <ul>
+              <li>Ensure you never loose anything</li>
+              <li>Keep connected with collogues</li>
+              <li>Administration tools to manage projects</li>
+              <li>Secure your files with peace of mind</li>
+              <li>Plans to suit you</li>
+              <li>Recovery Options</li>
+            </ul>
+          </th>
+          <td>
+            <ul>
+              <li>Device Management</li>
+              <li>Remote Wipe</li>
+              <li>Team Management </li>
+              <li>Link Permission</li>
+              <li>Account Transfer</li>
+              <li>Third Party Apps</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row"><a class="btn btn-learn push" href="pricing.html">Learn More</a></th>
+          <td><a class="btn btn-sign-up push" href="sign-up.html">Sign-Up</a></td>
+        </tr>
+      </tfoot>
+    </table>
   </main>
-
   <footer class="footer pad-t" role="contentinfo">
     <div class="grid">
       <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
@@ -108,6 +110,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
