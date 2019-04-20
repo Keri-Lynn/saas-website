@@ -23,6 +23,7 @@ img.resize-half {
 a:hover,
 a:active {
   outline: none;
+  background-color: yellow;
 }
 
 a:focus {
@@ -32,13 +33,13 @@ a:focus {
 .btn {
   background-color: #fff;
   color: #4c77a8;
-  border-color: #4c77a8;
+  border-color: #3d5059;
 }
 
 .btn:hover {
   background-color: #000;
   color: #8bb1d8;
-  border-color: #8bb1d8;
+  border-color: #3d5059;
 }
 
 .skip-links {
