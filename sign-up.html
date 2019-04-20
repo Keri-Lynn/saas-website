@@ -42,23 +42,52 @@
   <main role="main" id="main">
     <section class="overview">
       <div class="grid">
-        <div class="unit unit-s-1 unit-m-2-3 unit-l-2-3 gutter-1-2">
+        <div class="unit unit-s-1 unit-m-1 unit-l-1 gutter-1-2">
           <h2 id="overview">Individual, Group, or Business<br>file sharing service that people love,<br>employees need, and IT trusts!</h2>
         </div>
-      </div>
-      <div class="unit xs-1 embed embed-16by9">
-        <img class="embed-item img-flex" src="images/logo-thick.png" alt="">
       </div>
     </section>
     <section class="features pad-top">
       <h2 class="features" id="features">Features</h2>
       <div class="grid">
-        <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
+        <div class="unit unit-s-1 unit-m-1 unit-l-1 gutter-1-2">
           <p>Find the best solutions!<br>Contact our experts to help you find the right<br>SOLUTION</p>
           <p>Whether you just want backup storage, group project sharing, or mass business file management from anywhere we can help you!</p>
         </div>
         <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
           <form class="max-length gutter pad-t-2 pad-b-2" method="POST" action="https://formspree.io">
+            <fieldset>
+              <legend>Do you agree to the terms of use?</legend>
+
+              <input id="yes" type="radio" name="agree">
+              <label for="yes">Yes</label>
+
+              <input id="no" type="radio" name="agree">
+              <label for="no">No</label>
+            </fieldset>
+
+            <fieldset>
+              <legend class="giga pad-t-1-2 pad-b-1-2 push-1-2 gutter-1-2 unit xs-1">How are you using this?<br></legend>
+              <div class="grid gutter-1-2 pad-t-1-2 pad-b-1-2 push">
+
+                <div class="unit xs-1 l-1-2">
+                  <div class="push">
+                    <input id="personal" type="checkbox">
+                    <label for="personal">Personal</label>
+                  </div>
+                  <div class="push">
+                    <input id="school" type="checkbox">
+                    <label for="school">School</label>
+                  </div>
+
+                  <div class="push">
+                    <input id="business" type="checkbox">
+                    <label for="business">Business</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
             <fieldset>
               <legend class="giga">Personal details</legend>
               <div class="grid">
@@ -86,10 +115,52 @@
                     <option>Free</option>
                   </select>
                 </div>
-                <div class="push unit xs-1 m-1">
-                  <label for="address">Address</label>
-                  <textarea id="address" name="message" required></textarea>
+              </div>
+            </fieldset>
+            <fieldset>
+
+              <legend class="giga">Address</legend>
+              <div class="grid gutter-1-2 space-right">
+
+                <div class="push-1-2 space-right unit xs-1 l-1-2">
+                  <label for="street-address">Street Address</label>
+                  <input id="street-address">
                 </div>
+
+                <div class="push space-right unit xs-1 l-1-2">
+                  <label for="city">City</label>
+                  <input id="city">
+                </div>
+
+                <div class="push space-right unit xs-1 l-1-2">
+                  <label for="province">Province</label>
+                  <input id="province" list="province-list" placeholder="Select a province" required>
+                  <datalist id="province-list">
+                    <option value="Alberta">Alberta</option>
+                    <option value="British Columbia">British Columbia</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="New Brunswick">New Brunswick</option>
+                    <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+                    <option value="Northwest Territories">Northwest Territories</option>
+                    <option value="Nova Scotia">Nova Scotia</option>
+                    <option value="Nunavut">Nunavut</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Prince Edward Island">Prince Edward Island</option>
+                    <option value="Québec">Québec</option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Yukon">Yukon</option>
+                  </datalist>
+                </div>
+
+                <div class="push space-right unit xs-1 l-1-2">
+                  <label for="country">Country</label>
+                  <input id="country">
+                </div>
+                <div class="push space-right unit xs-1 l-1-2">
+                  <label for="postal-code">Postal Code</label>
+                  <input id="postal-code">
+                </div>
+
               </div>
             </fieldset>
             <fieldset>
@@ -122,6 +193,9 @@
             <p class="push-0 footer-copyright"><small>© SkyShare</small></p>
           </li>
         </ul>
+        <div class="unit xs-1 embed embed-16by9">
+          <img role="presentation" class="embed-item img-flex" src="images/logo-thick.png" alt="">
+        </div>
       </div>
     </div>
   </footer>

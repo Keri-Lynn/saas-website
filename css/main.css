@@ -20,10 +20,14 @@ img.resize-half {
   max-height: 50%;
 }
 
+.overview {
+  text-align: center;
+}
+
 a:hover,
 a:active {
   outline: none;
-  background-color: yellow;
+  background-color: #3d5059;
 }
 
 a:focus {
